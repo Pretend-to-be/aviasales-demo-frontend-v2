@@ -68,14 +68,14 @@ export const PriceInfo = GreetingText.extend`
   text-overflow: ellipsis;
 `;
 
-export const CompanyLogo = styled.img``;
+export const Logo = styled.img``;
 
 export const CardContent = styled.div`
   background-color: #ffffff;
   padding: 0 8px 16px;
 `;
 
-export const CompanyOffer = styled.div`
+export const Offer = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -83,14 +83,14 @@ export const CompanyOffer = styled.div`
   padding-left: 8px;
 `;
 
-export const CompanyOfferText = styled.div`
+export const OfferText = styled.div`
   padding: 20px 8px 0 0;
   @media (min-width: 768px) {
     padding: 20px 0 0;
   }
 `;
 
-export const CompanyOfferLogo = styled.img`
+export const OfferLogo = styled.img`
   margin-top: 22px;
   @media (min-width: 768px) {
     width: 100px;

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 20px 6px 8px;
+  padding: 20px 0 8px;
   background: #ffffff;
 
   @media (min-width: 768px) {
-    padding: 16px 8px 32px;
+    padding: 16px 0 32px;
   }
 `;
 

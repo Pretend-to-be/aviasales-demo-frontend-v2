@@ -14,9 +14,9 @@ import {
   Container,
   Rubricator,
   RubricatorUnit,
-  RubricatorUnitHeading,
-  RubricatorUnitContent,
-  RubricatorUnitExtend,
+  UnitHeading,
+  UnitContent,
+  UnitExtend,
   UsefulLinks,
   UsefulLink,
   SocialMedia,
@@ -41,63 +41,63 @@ export default () => (
     <div className="container">
       <Rubricator>
         <RubricatorUnit>
-          <RubricatorUnitHeading>СТРАНЫ</RubricatorUnitHeading>
-          <RubricatorUnitContent>Россия</RubricatorUnitContent>
-          <RubricatorUnitContent>Таиланд</RubricatorUnitContent>
-          <RubricatorUnitContent>Черногория</RubricatorUnitContent>
-          <RubricatorUnitContent>Кипр</RubricatorUnitContent>
-          <RubricatorUnitContent>Болгария</RubricatorUnitContent>
-          <RubricatorUnitContent>Грузия</RubricatorUnitContent>
-          <RubricatorUnitExtend>Все страны →</RubricatorUnitExtend>
+          <UnitHeading>СТРАНЫ</UnitHeading>
+          <UnitContent>Россия</UnitContent>
+          <UnitContent>Таиланд</UnitContent>
+          <UnitContent>Черногория</UnitContent>
+          <UnitContent>Кипр</UnitContent>
+          <UnitContent>Болгария</UnitContent>
+          <UnitContent>Грузия</UnitContent>
+          <UnitExtend>Все страны →</UnitExtend>
         </RubricatorUnit>
         <RubricatorUnit>
-          <RubricatorUnitHeading>ГОРОДА</RubricatorUnitHeading>
-          <RubricatorUnitContent>Москва</RubricatorUnitContent>
-          <RubricatorUnitContent>Санкт-Петербург</RubricatorUnitContent>
-          <RubricatorUnitContent>Симферополь</RubricatorUnitContent>
-          <RubricatorUnitContent>Адлер</RubricatorUnitContent>
-          <RubricatorUnitContent>Екатеринбург</RubricatorUnitContent>
-          <RubricatorUnitContent>Лондон</RubricatorUnitContent>
-          <RubricatorUnitExtend>Все города →</RubricatorUnitExtend>
+          <UnitHeading>ГОРОДА</UnitHeading>
+          <UnitContent>Москва</UnitContent>
+          <UnitContent>Санкт-Петербург</UnitContent>
+          <UnitContent>Симферополь</UnitContent>
+          <UnitContent>Адлер</UnitContent>
+          <UnitContent>Екатеринбург</UnitContent>
+          <UnitContent>Лондон</UnitContent>
+          <UnitExtend>Все города →</UnitExtend>
         </RubricatorUnit>
         <RubricatorUnit>
-          <RubricatorUnitHeading>АВИАКОМПАНИИ</RubricatorUnitHeading>
-          <RubricatorUnitContent>Air Berlin</RubricatorUnitContent>
-          <RubricatorUnitContent>Air France</RubricatorUnitContent>
-          <RubricatorUnitContent>Alitalia</RubricatorUnitContent>
-          <RubricatorUnitContent>Air Baltic</RubricatorUnitContent>
-          <RubricatorUnitContent>Emirates</RubricatorUnitContent>
-          <RubricatorUnitContent>KLM</RubricatorUnitContent>
-          <RubricatorUnitExtend>Все авиакомпании →</RubricatorUnitExtend>
+          <UnitHeading>АВИАКОМПАНИИ</UnitHeading>
+          <UnitContent>Air Berlin</UnitContent>
+          <UnitContent>Air France</UnitContent>
+          <UnitContent>Alitalia</UnitContent>
+          <UnitContent>Air Baltic</UnitContent>
+          <UnitContent>Emirates</UnitContent>
+          <UnitContent>KLM</UnitContent>
+          <UnitExtend>Все авиакомпании →</UnitExtend>
         </RubricatorUnit>
         <RubricatorUnit>
-          <RubricatorUnitHeading>АЭРОПОРТЫ</RubricatorUnitHeading>
-          <RubricatorUnitContent>Шереметьево</RubricatorUnitContent>
-          <RubricatorUnitContent>Курумоч</RubricatorUnitContent>
-          <RubricatorUnitContent>Домодедово</RubricatorUnitContent>
-          <RubricatorUnitContent>Толмачево</RubricatorUnitContent>
-          <RubricatorUnitContent>Владивосток</RubricatorUnitContent>
-          <RubricatorUnitContent>Гамбург</RubricatorUnitContent>
-          <RubricatorUnitExtend>Все аэропорты →</RubricatorUnitExtend>
+          <UnitHeading>АЭРОПОРТЫ</UnitHeading>
+          <UnitContent>Шереметьево</UnitContent>
+          <UnitContent>Курумоч</UnitContent>
+          <UnitContent>Домодедово</UnitContent>
+          <UnitContent>Толмачево</UnitContent>
+          <UnitContent>Владивосток</UnitContent>
+          <UnitContent>Гамбург</UnitContent>
+          <UnitExtend>Все аэропорты →</UnitExtend>
         </RubricatorUnit>
         <RubricatorUnit>
-          <RubricatorUnitHeading>НАПРАВЛЕНИЯ</RubricatorUnitHeading>
-          <RubricatorUnitContent>MOW – SIP</RubricatorUnitContent>
-          <RubricatorUnitContent>MOW – AER</RubricatorUnitContent>
-          <RubricatorUnitContent>MOW – TIV</RubricatorUnitContent>
-          <RubricatorUnitContent>MOW – MRV</RubricatorUnitContent>
-          <RubricatorUnitContent>LED – MOW</RubricatorUnitContent>
-          <RubricatorUnitContent>MOW – BKK</RubricatorUnitContent>
+          <UnitHeading>НАПРАВЛЕНИЯ</UnitHeading>
+          <UnitContent>MOW – SIP</UnitContent>
+          <UnitContent>MOW – AER</UnitContent>
+          <UnitContent>MOW – TIV</UnitContent>
+          <UnitContent>MOW – MRV</UnitContent>
+          <UnitContent>LED – MOW</UnitContent>
+          <UnitContent>MOW – BKK</UnitContent>
         </RubricatorUnit>
         <RubricatorUnit>
-          <RubricatorUnitHeading>СЕРВИСЫ</RubricatorUnitHeading>
-          <RubricatorUnitContent>Горящие авиабилеты</RubricatorUnitContent>
-          <RubricatorUnitContent>Календарь низких цен</RubricatorUnitContent>
-          <RubricatorUnitContent>Карта низких цен</RubricatorUnitContent>
-          <RubricatorUnitContent>Спецпредложения</RubricatorUnitContent>
-          <RubricatorUnitContent>Таблица цен</RubricatorUnitContent>
-          <RubricatorUnitContent>Блог</RubricatorUnitContent>
-          <RubricatorUnitContent>Помощь</RubricatorUnitContent>
+          <UnitHeading>СЕРВИСЫ</UnitHeading>
+          <UnitContent>Горящие авиабилеты</UnitContent>
+          <UnitContent>Календарь низких цен</UnitContent>
+          <UnitContent>Карта низких цен</UnitContent>
+          <UnitContent>Спецпредложения</UnitContent>
+          <UnitContent>Таблица цен</UnitContent>
+          <UnitContent>Блог</UnitContent>
+          <UnitContent>Помощь</UnitContent>
         </RubricatorUnit>
       </Rubricator>
       <UsefulStuff>

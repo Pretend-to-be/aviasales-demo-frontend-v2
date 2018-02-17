@@ -9,12 +9,12 @@ import culture from "./Culture.svg";
 import coctail from "./Coctail.svg";
 import child from "./Child_car.svg";
 import underline from "./Rectangle2.svg";
-import pop_bg_1 from "./backgroundImage-17.png";
-import pop_bg_2 from "./Group 11.png";
-import pop_bg_3 from "./Group 9.png";
-import pop_bg_4 from "./Group 8.png";
-import pop_bg_5 from "./Group.png";
-import pop_bg_6 from "./Group-3.png";
+import pop_bg_1 from "./City1.png";
+import pop_bg_2 from "./City2.png";
+import pop_bg_3 from "./City3.png";
+import pop_bg_4 from "./City4.png";
+import pop_bg_5 from "./City5.png";
+import pop_bg_6 from "./City6.png";
 
 import {
   Container,

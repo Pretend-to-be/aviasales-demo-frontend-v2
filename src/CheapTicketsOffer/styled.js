@@ -27,7 +27,7 @@ export const Slider = styled.div`
   position: relative;
 `;
 
-export const SliderContent = styled.div`
+export const Content = styled.div`
   text-align: center;
 `;
 
@@ -35,26 +35,26 @@ export const CompanyLogo = styled.img`
   padding: 24px 24px;
 `;
 
-export const SliderPrevious = styled.img`
+export const Previous = styled.img`
   position: absolute;
   left: 0;
   top: 45%;
 `;
 
-export const SliderNext = styled.img`
+export const Next = styled.img`
   position: absolute;
   right: 0;
   top: 45%;
   left: unset;
 `;
 
-export const SliderStateDisplay = styled.div`
+export const StateDisplay = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
 `;
 
-export const SliderState = styled.div`
+export const State = styled.div`
   background: rgba(0, 0, 0, 0.0001);
   border: 1px solid #818181;
   border-radius: 50px;

@@ -14,11 +14,11 @@ import {
   Offer,
   InviteText,
   Slider,
-  SliderPrevious,
-  SliderNext,
-  SliderStateDisplay,
-  SliderState,
-  SliderContent,
+  Previous,
+  Next,
+  StateDisplay,
+  State,
+  Content,
   CompanyLogo,
   Outline
 } from "./styled";
@@ -31,20 +31,20 @@ export default () => (
           Дешевые авиабилеты от крупнейших авиакомпаний и агентств
         </InviteText>
         <Slider>
-          <SliderContent>
+          <Content>
             <CompanyLogo src={aeroflot} alt="Aeroflot" />
             <CompanyLogo src={s7Logo} alt="s7Logo" />
             <CompanyLogo src={oneTwoTrip} alt="oneTwoTrip" />
             <CompanyLogo src={koreanAir} alt="koreanAir" />
             <CompanyLogo src={eltw} alt="eltw" />
-          </SliderContent>
-          <SliderPrevious src={sliderLeft} />
-          <SliderNext src={sliderRight} />
-          <SliderStateDisplay>
-            <SliderState active />
-            <SliderState />
-            <SliderState />
-          </SliderStateDisplay>
+          </Content>
+          <Previous src={sliderLeft} />
+          <Next src={sliderRight} />
+          <StateDisplay>
+            <State active />
+            <State />
+            <State />
+          </StateDisplay>
         </Slider>
       </Offer>
     </div>

@@ -40,7 +40,7 @@ export const RubricatorUnit = styled.div`
   }
 `;
 
-export const RubricatorUnitHeading = styled.h1`
+export const UnitHeading = styled.h1`
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -51,12 +51,12 @@ export const RubricatorUnitHeading = styled.h1`
   padding-bottom: 16px;
 `;
 
-export const RubricatorUnitContent = RubricatorUnitHeading.extend`
+export const UnitContent = UnitHeading.extend`
   font-weight: normal;
   padding-bottom: 12px;
 `;
 
-export const RubricatorUnitExtend = RubricatorUnitHeading.extend`
+export const UnitExtend = UnitHeading.extend`
   padding-top: 4px;
 `;
 

@@ -1,38 +1,25 @@
 import styled from "styled-components";
 
-import phoneImageMobile from "./backgroundImage-16.png";
-import phoneImageTablet from "./backgroundImage-18.png";
+import phoneImageMobile from "./phoneSmall.png";
+import phoneImageTablet from "./phoneMedium.png";
 
 export const Container = styled.div`
   background: linear-gradient(137.4deg, #00b0de 4.18%, #196ebd 104.18%);
-  padding: 24px 6px 220px 0;
+  padding: 24px 0 220px 0;
   position: relative;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 162px;
-    height: 213px;
-    bottom: 0;
-    right: 50%;
-    background: url(${phoneImageMobile}) no-repeat;
-  }
+
   @media (min-width: 768px) {
-    padding: 46px 72px 40px 264px;
+    padding: 46px 0 40px 0;
     margin-top: 30px;
     background: linear-gradient(110.1deg, #00b0de -38.19%, #196ebd 61.81%);
-    &::before {
-      background: url(${phoneImageTablet}) no-repeat;
-      width: 237px;
-      height: 312px;
-      left: 0;
-    }
   }
   @media (min-width: 1440px) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
+
+export const Content = styled.div``;
 
 export const InviteText = styled.h1`
   margin: 0 auto;
@@ -66,12 +53,33 @@ export const Rating = styled.div`
   }
 
   @media (min-width: 1440px) {
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 
-export const Stars = styled.img``;
-
+export const StarsImage = styled.img``;
+export const Stars = styled.div`
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 162px;
+    height: 213px;
+    top: 41px;
+    left: -35px;
+    background: url(${phoneImageMobile}) no-repeat;
+  }
+  @media (min-width: 768px) {
+    &::before {
+      background: url(${phoneImageTablet}) no-repeat;
+      width: 237px;
+      height: 312px;
+      top: -171px;
+      left: -237px;
+    }
+  }
+`;
 export const RaterAmount = styled.p`
   margin-top: 24px;
   margin-left: 8px;
@@ -88,13 +96,6 @@ export const RaterAmount = styled.p`
   }
 `;
 
-export const Image = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-`;
-
 export const PlatformList = styled.div`
   display: inline-block;
   margin-left: 0px;
@@ -102,7 +103,7 @@ export const PlatformList = styled.div`
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 57%;
   @media (min-width: 768px) {
     flex-direction: row;
@@ -113,7 +114,6 @@ export const PlatformList = styled.div`
     left: 0;
   }
   @media (min-width: 1440px) {
-    justify-content: center;
   }
 `;
 
