@@ -19,24 +19,26 @@ import {
 
 export default () => (
   <Container>
-    <InviteText>Скачай мобильное приложение Aviasales.ru</InviteText>
-    <Rating>
-      <Stars src={rating} alt="AppRating" />
-      <RaterAmount>Более 103 000 оценок</RaterAmount>
-    </Rating>
-    <PlatformList>
-      <Platform>
-        <PlatformLogo src={apple_logo} alt="Apple Logo" />
-        <PlatformName>iPhone или iPad</PlatformName>
-      </Platform>
-      <Platform>
-        <PlatformLogo src={android_logo} alt="Apple Logo" />
-        <PlatformName>Android</PlatformName>
-      </Platform>
-      <Platform>
-        <PlatformLogo src={win_logo} alt="Apple Logo" />
-        <PlatformName>Windows Phone</PlatformName>
-      </Platform>
-    </PlatformList>
+    <div className="container">
+      <InviteText>Скачай мобильное приложение Aviasales.ru</InviteText>
+      <Rating>
+        <Stars src={rating} alt="AppRating" />
+        <RaterAmount>Более 103 000 оценок</RaterAmount>
+      </Rating>
+      <PlatformList>
+        <Platform>
+          <PlatformLogo src={apple_logo} alt="Apple Logo" />
+          <PlatformName>iPhone или iPad</PlatformName>
+        </Platform>
+        <Platform>
+          <PlatformLogo src={android_logo} alt="Apple Logo" />
+          <PlatformName>Android</PlatformName>
+        </Platform>
+        <Platform>
+          <PlatformLogo src={win_logo} alt="Apple Logo" />
+          <PlatformName>Windows Phone</PlatformName>
+        </Platform>
+      </PlatformList>
+    </div>
   </Container>
 );

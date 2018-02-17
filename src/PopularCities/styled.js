@@ -32,6 +32,12 @@ export const PopularCityDescription = styled.p`
     font-size: 24px;
     margin: 24px 145px 0;
   }
+
+  @media (min-width: 1440px) {
+    line-height: 36px;
+    font-size: 24px;
+    margin: 24px 170px 0;
+  }
 `;
 export const PopularCityName = PopularCityDescription.extend`
   color: #00ace2;
@@ -39,6 +45,10 @@ export const PopularCityName = PopularCityDescription.extend`
   margin: 0px;
   @media (min-width: 768px) {
     padding: 0px;
+    margin: 0px;
+  }
+
+  @media (min-width: 1440px) {
     margin: 0px;
   }
 `;
@@ -56,6 +66,10 @@ export const DirectionTypeBlock = styled.div`
   @media (min-width: 768px) {
     padding: 0 72px;
     justify-content: space-around;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 32px 20%;
   }
 `;
 
@@ -117,7 +131,11 @@ export const ChosenDirectionTypeProposal = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 10% 25px;
+  padding: 16px 0 25px;
+
+  @media (min-width: 1440px) {
+    flex-flow: row wrap;
+  }
 `;
 
 export const ChosenDirectionTypeProposalCity = styled.div`
@@ -129,12 +147,20 @@ export const ChosenDirectionTypeProposalCity = styled.div`
   justify-content: space-between;
   border-radius: 0 0 8px 8px;
   box-shadow: 0px 2px 12px rgba(0, 75, 93, 0.12);
+
+  @media (min-width: 1440px) {
+    flex-basis: 48%;
+    margin: 0 7px 30px;
+  }
 `;
 
 export const ChosenDirectionTypeProposalPicture = styled.img`
   box-sizing: border-box;
   border-radius: 8px 8px 0 0;
   width: 100%;
+  @media (min-width: 768px) {
+    height: 212px;
+  }
 `;
 
 export const ChosenDirectionTypeProposalContent = styled.div`
@@ -159,7 +185,7 @@ export const ChosenDirectionTypeProposalOfferInfo = ChosenDirectionTypeProposalC
   justify-content: flex-end;
 `;
 
-export const ChosenDirectionTypeProposalCityName = styled.h1`
+export const ChosenDirectionTypeProposalCityName = styled.p`
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -177,7 +203,7 @@ export const ChosenDirectionTypeProposalCountryName = ChosenDirectionTypeProposa
   margin: 0px 0px 12px 10px;
 `;
 
-export const ChosenDirectionTypeProposalOfferPrice = styled.h1`
+export const ChosenDirectionTypeProposalOfferPrice = styled.p`
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;

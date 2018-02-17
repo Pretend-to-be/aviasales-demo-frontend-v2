@@ -9,47 +9,56 @@ import {
   Container,
   InviteText,
   HowToSignUp,
-  SocialMediaBlock,
+  SocialMedia,
   SocialMediaLabel,
-  EmailSignupBlock,
+  EmailSignup,
   EmailField,
   SubmitButton,
   SocialMediaBg,
-  MediaLink
+  MediaLink,
+  SaleOffer
 } from "./styled";
 
 export default () => (
-  <Container>
-    <InviteText>Хотите знать всё о скидках на авиабилеты?</InviteText>
-    <HowToSignUp>
-      Вы можете подписаться на нашу рассылку через соцсети или по электронной
-      почте.
-    </HowToSignUp>
-    <SocialMediaBlock>
-      <MediaLink>
-        <SocialMediaBg>
-          <SocialMediaLabel src={twitterLogo} alt="twitterLogo" />
-        </SocialMediaBg>
-      </MediaLink>
-      <SocialMediaBg>
-        <SocialMediaBg>
-          <SocialMediaLabel src={fbLogo} alt="fbLogo" />
-        </SocialMediaBg>
-      </SocialMediaBg>
-      <SocialMediaBg>
-        <SocialMediaBg>
-          <SocialMediaLabel src={vkLogo} alt="vkLogo" />
-        </SocialMediaBg>
-      </SocialMediaBg>
-      <SocialMediaBg>
-        <SocialMediaBg>
-          <SocialMediaLabel src={rssLogo} alt="rssLogo" />
-        </SocialMediaBg>
-      </SocialMediaBg>
-    </SocialMediaBlock>
-    <EmailSignupBlock>
-      <EmailField placeholder="Ваш email" />
-      <SubmitButton> Подписаться</SubmitButton>
-    </EmailSignupBlock>
-  </Container>
+  <div className="Container">
+    <div className="row">
+      <div className="col-xl-offset-1 col-xl-10">
+        <Container>
+          <SaleOffer>
+            <InviteText>Хотите знать всё о скидках на авиабилеты?</InviteText>
+            <HowToSignUp>
+              Вы можете подписаться на нашу рассылку через соцсети или по
+              электронной почте.
+            </HowToSignUp>
+          </SaleOffer>
+          <SocialMedia>
+            <MediaLink>
+              <SocialMediaBg>
+                <SocialMediaLabel src={twitterLogo} alt="twitterLogo" />
+              </SocialMediaBg>
+            </MediaLink>
+            <SocialMediaBg>
+              <SocialMediaBg>
+                <SocialMediaLabel src={fbLogo} alt="fbLogo" />
+              </SocialMediaBg>
+            </SocialMediaBg>
+            <SocialMediaBg>
+              <SocialMediaBg>
+                <SocialMediaLabel src={vkLogo} alt="vkLogo" />
+              </SocialMediaBg>
+            </SocialMediaBg>
+            <SocialMediaBg>
+              <SocialMediaBg>
+                <SocialMediaLabel src={rssLogo} alt="rssLogo" />
+              </SocialMediaBg>
+            </SocialMediaBg>
+          </SocialMedia>
+          <EmailSignup>
+            <EmailField placeholder="Ваш email" />
+            <SubmitButton> Подписаться</SubmitButton>
+          </EmailSignup>
+        </Container>
+      </div>
+    </div>
+  </div>
 );

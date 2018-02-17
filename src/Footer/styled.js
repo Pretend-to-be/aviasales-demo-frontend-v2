@@ -7,16 +7,20 @@ export const Container = styled.div`
   }
 `;
 
-export const FooterRubricator = styled.div`
+export const Rubricator = styled.div`
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid #e0e6e8;
   box-sizing: border-box;
   padding-bottom: 24px;
   justify-content: flex-start;
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+  }
 `;
 
-export const FooterRubricatorUnit = styled.div`
+export const RubricatorUnit = styled.div`
   flex: 1 50%;
   display: flex;
   flex-direction: column;
@@ -27,9 +31,16 @@ export const FooterRubricatorUnit = styled.div`
       flex: 1 75%;
     }
   }
+
+  @media (min-width: 1440px) {
+    flex: unset;
+    &:last-child {
+      flex: unset;
+    }
+  }
 `;
 
-export const FooterRubricatorUnitHeading = styled.h1`
+export const RubricatorUnitHeading = styled.h1`
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -40,16 +51,27 @@ export const FooterRubricatorUnitHeading = styled.h1`
   padding-bottom: 16px;
 `;
 
-export const FooterRubricatorUnitContent = FooterRubricatorUnitHeading.extend`
+export const RubricatorUnitContent = RubricatorUnitHeading.extend`
   font-weight: normal;
   padding-bottom: 12px;
 `;
 
-export const FooterRubricatorUnitExtend = FooterRubricatorUnitHeading.extend`
+export const RubricatorUnitExtend = RubricatorUnitHeading.extend`
   padding-top: 4px;
 `;
 
-export const FooterUsefulLinks = styled.div`
+export const ForCustomers = styled.div``;
+
+export const UsefulStuff = styled.div`
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+
+export const UsefulLinks = styled.div`
   padding-top: 24px;
   padding-right: 40px;
   display: flex;
@@ -59,7 +81,7 @@ export const FooterUsefulLinks = styled.div`
   }
 `;
 
-export const FooterUsefulLink = styled.a`
+export const UsefulLink = styled.a`
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -76,7 +98,7 @@ export const FooterUsefulLink = styled.a`
   }
 `;
 
-export const FooterSocialMedia = styled.div`
+export const SocialMedia = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -85,9 +107,13 @@ export const FooterSocialMedia = styled.div`
   @media (min-width: 768px) {
     justify-content: flex-start;
   }
+
+  @media (min-width: 1440px) {
+    justify-content: flex-start;
+  }
 `;
 
-export const FooterSocialMediaUnit = styled.div`
+export const SocialMediaUnit = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -105,9 +131,9 @@ export const FooterSocialMediaUnit = styled.div`
   }
 `;
 
-export const FooterSocialMediaLogo = styled.img``;
+export const SocialMediaLogo = styled.img``;
 
-export const FooterSocialMediaName = styled.h1`
+export const SocialMediaName = styled.h1`
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -117,7 +143,7 @@ export const FooterSocialMediaName = styled.h1`
   color: #4a4a4a;
   padding-left: 5px;
 `;
-export const FooterHotelReserve = styled.div`
+export const HotelReserve = styled.div`
   display: flex;
   justify-content: center;
   margin: 24px 0 16px;
@@ -126,7 +152,7 @@ export const FooterHotelReserve = styled.div`
   }
 `;
 
-export const FooterHotelReserveLink = styled.a`
+export const HotelReserveLink = styled.a`
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -137,7 +163,7 @@ export const FooterHotelReserveLink = styled.a`
   color: #5b5b5c;
 `;
 
-export const FooterInstallAppBlock = styled.div`
+export const InstallAppBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +174,7 @@ export const FooterInstallAppBlock = styled.div`
   }
 `;
 
-export const FooterInstallAppButton = styled.div`
+export const InstallAppButton = styled.div`
   background: #1e292d;
   border-radius: 5px;
   padding: 8px 0 6px 12px;
@@ -159,18 +185,18 @@ export const FooterInstallAppButton = styled.div`
   }
 `;
 
-export const FooterInstallAppButtonLogo = styled.img`
+export const InstallAppButtonLogo = styled.img`
   display: inline-block;
   position: absolute;
   bottom: 25%;
 `;
 
-export const FooterInstallAppButtonText = styled.div`
+export const InstallAppButtonText = styled.div`
   display: inline-block;
   padding: 0 25px 0 35px;
 `;
 
-export const FooterInstallDownloadAt = styled.h1`
+export const InstallDownloadAt = styled.h1`
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -181,13 +207,13 @@ export const FooterInstallDownloadAt = styled.h1`
   margin: 0px;
 `;
 
-export const FooterInstallPlace = FooterInstallDownloadAt.extend`
+export const InstallPlace = InstallDownloadAt.extend`
   font-weight: bold;
   font-size: 12px;
   display: block;
 `;
 
-export const FooterCopyright = styled.h1`
+export const Copyright = styled.h1`
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

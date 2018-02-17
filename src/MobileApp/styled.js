@@ -28,6 +28,10 @@ export const Container = styled.div`
       left: 0;
     }
   }
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const InviteText = styled.h1`
@@ -45,6 +49,10 @@ export const InviteText = styled.h1`
     font-size: 32px;
     text-align: left;
   }
+
+  @media (min-width: 1440px) {
+    text-align: center;
+  }
 `;
 
 export const Rating = styled.div`
@@ -55,6 +63,10 @@ export const Rating = styled.div`
   @media (min-width: 768px) {
     justify-content: flex-start;
     padding-top: 0;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: center;
   }
 `;
 
@@ -99,6 +111,9 @@ export const PlatformList = styled.div`
     position: relative;
     top: 0;
     left: 0;
+  }
+  @media (min-width: 1440px) {
+    justify-content: center;
   }
 `;
 

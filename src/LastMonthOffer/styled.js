@@ -39,6 +39,12 @@ export const GreetingText = styled.h1`
 
 export const DirectionList = styled.div`
   display: block;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const Direction = styled.div`
@@ -48,6 +54,21 @@ export const Direction = styled.div`
   border-bottom: 1px dashed #afbec6;
   &::last-child {
     border: none;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 4%;
+    border-bottom: none;
+    border-right: 1px dashed #afbec6;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
   }
 `;
 
@@ -83,7 +104,7 @@ export const DirectionInfoText = styled.div`
   margin-left: 12px;
 `;
 
-export const DirectionCityName = styled.h1`
+export const DirectionCityName = styled.p`
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -93,7 +114,7 @@ export const DirectionCityName = styled.h1`
   color: #5b5b5c;
 `;
 
-export const DirectionCountryName = styled.h1`
+export const DirectionCountryName = styled.p`
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -115,7 +136,7 @@ export const DirectionDepartureListCard = styled.div`
   margin-bottom: 16px;
 `;
 
-export const DirectionDepartureCity = styled.h1`
+export const DirectionDepartureCity = styled.p`
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

@@ -6,32 +6,42 @@ import leftArrow from "./arrowleft.svg";
 import rightArrow from "./arrowright.svg";
 
 export const Container = styled.div`
-	background: linear-gradient(
-		148.48deg,
-		#00b0de 22.46%,
-		#01aedc 26.15%,
-		#02abdb 29.89%,
-		#02abdb 33.59%,
-		#02abdb 33.81%,
-		#196ebd 122.26%
-	);
-	padding: 0px 6px 88px 6px;
+  background: linear-gradient(
+    148.48deg,
+    #00b0de 22.46%,
+    #01aedc 26.15%,
+    #02abdb 29.89%,
+    #02abdb 33.59%,
+    #02abdb 33.81%,
+    #196ebd 122.26%
+  );
+  padding: 0px 6px 88px 6px;
 
-	@media (min-width: 768px) {
-		background: linear-gradient(
-			126.97deg,
-			#00b0de -13.66%,
-			#01aedc -9.98%,
-			#02abdb -6.26%,
-			#02abdb -2.56%,
-			#02abdb -2.34%,
-			#196ebd 85.88%
-		);
-	}
+  @media (min-width: 768px) {
+    background: linear-gradient(
+      126.97deg,
+      #00b0de -13.66%,
+      #01aedc -9.98%,
+      #02abdb -6.26%,
+      #02abdb -2.56%,
+      #02abdb -2.34%,
+      #196ebd 85.88%
+    );
+  }
 
-	@media (min-width: 1440px) {
-		background: linear-gradient(119.26deg, #00B0DE -25.78%, #01AEDC -22.1%, #02ABDB -18.38%, #02ABDB -14.68%, #02ABDB -14.46%, #196EBD 73.68%);
+  @media (min-width: 1440px) {
+    background: linear-gradient(
+      119.26deg,
+      #00b0de -25.78%,
+      #01aedc -22.1%,
+      #02abdb -18.38%,
+      #02abdb -14.68%,
+      #02abdb -14.46%,
+      #196ebd 73.68%
+    );
 
+    padding-bottom: 270px;
+  }
 `;
 
 export const LogoLocation = styled.div`
@@ -68,6 +78,10 @@ export const InviteTextBlock = styled.div`
   @media (min-width: 768px) {
     padding: 122px 8px 8px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 254px 8px 8px;
+  }
 `;
 
 export const InviteText = styled.h1`
@@ -84,6 +98,10 @@ export const InviteText = styled.h1`
     line-height: 48px;
     font-size: 32px;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+  }
 `;
 
 export const InviteTextHidden = InviteText.extend`
@@ -94,6 +112,9 @@ export const InviteTextHidden = InviteText.extend`
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 40px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 24px;
   }
 `;
 
@@ -120,7 +141,6 @@ export const CustomerTextCity = styled.input`
   color: #4a4a4a;
   border: none;
   ${props => (props.departure ? "border-radius: 4px 4px 0 0" : "")};
-
   padding: 18px 0 18px 16px;
   margin-bottom: 1px;
 
@@ -129,31 +149,53 @@ export const CustomerTextCity = styled.input`
     border-radius: ${props => (props.departure ? " 4px 0 0 0" : " 0 4px 0 0")};
     ${props => (props.departure ? "margin-right: 0px" : "margin-left: 3px")};
   }
+
+  @media (min-width: 1440px) {
+    flex-basis: 21%;
+    border-radius: ${props => (props.departure ? " 4px 0 0 4px" : " 0")};
+    margin-right: ${props => (props.departure ? "  2px" : " 0")};
+    margin-left: 0;
+  }
 `;
 
 export const CustomerTextDate = CustomerTextCity.extend`
-  flex: 1 0;
+  flex: 1 25%;
+  min-width: 0;
   margin-right: ${props => (props.departure ? "2px" : "0")};
   border-radius: 0;
   @media (min-width: 768px) {
-    /*flex: 1 24.4%;*/
     border-radius: ${props => (props.departure ? " 	 0 0 0 4px" : "0 ")};
-    margin-right: ${props => (props.departure ? "  2px" : " 0px")};
-    margin-left: 0;
+    margin-right: ${props => (props.departure ? "  1px" : " 0px")};
+    margin-left: ${props => (props.departure ? "  0" : " 2px")};
+  }
+
+  @media (min-width: 1440px) {
+    border-radius: 0;
+    margin-right: ${props => (props.departure ? "  1px" : " 2px")};
+    margin-left: ${props => (props.departure ? "  2px" : " 1px")};
   }
 `;
 
 export const CustomerDate = styled.div`
   display: flex;
+  min-width: 0;
   flex-direction: row;
   justify-content: center;
   flex: 2 100%;
   padding-bottom: 2px;
+  position: relative;
   @media (min-width: 768px) {
     flex: 2 49%;
     margin-right: 0px;
     padding-bottom: 3px;
     min-width: 0;
+  }
+
+  @media (min-width: 1440px) {
+    flex-basis: 18%;
+    border-radius: 0;
+    margin-left: 0;
+    padding-bottom: 2px;
   }
 `;
 
@@ -161,11 +203,19 @@ export const CustomerInfoWrapper = styled.div`
   display: flex;
   flex: 2 100%;
   padding-bottom: 2px;
+  position: relative;
 
   @media (min-width: 768px) {
     display: flex;
     flex: 2 49%;
     padding-bottom: 2px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-basis: 15%;
+    border-radius: 0;
+    margin: 0;
+    padding-right: 0px;
   }
 `;
 
@@ -176,7 +226,7 @@ export const CalendarLogo = styled.div`
     position: absolute;
     width: 17px;
     height: 20px;
-    top: 262px;
+    top: 18px;
 
     ${props => (props.departure ? "right: 55%;" : "right: 7%;")};
     background: url(${calendar}) no-repeat;
@@ -214,6 +264,14 @@ export const PassengerInfo = styled.button`
     border-radius: 0 0 4px 0;
     margin-left: 3px;
   }
+
+  @media (min-width: 1440px) {
+    flex-basis: 21%;
+    border-radius: 0;
+    margin-left: 0px;
+    margin-bottom: 1px;
+    border-radius: 0 4px 4px 0;
+  }
 `;
 
 export const AirportName = styled.div`
@@ -227,14 +285,22 @@ export const AirportName = styled.div`
     color: #a0b0b9;
     display: inline-block;
     position: absolute;
-    top: 148px;
-    right: 15%;
+    top: 20px;
+    right: 60px;
   }
   @media (min-width: 768px) {
     position: relative;
     &::before {
       top: 20px;
       right: 60px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    &::after {
+      top: 20px;
+      right: 50px;
     }
   }
 `;
@@ -246,8 +312,8 @@ export const CitySwapper = styled.div`
     position: absolute;
     width: 26px;
     height: 21px;
-    top: 148px;
-    right: 2.4%;
+    top: 20px;
+    right: 15px;
     background: url(${leftArrow}) no-repeat;
   }
   @media (min-width: 768px) {
@@ -264,8 +330,8 @@ export const CitySwapper = styled.div`
     position: absolute;
     width: 26px;
     height: 21px;
-    top: 158px;
-    right: 2.4%;
+    top: 30px;
+    right: 15px;
     background: url(${rightArrow}) no-repeat;
   }
   @media (min-width: 768px) {

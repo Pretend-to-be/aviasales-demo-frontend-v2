@@ -25,27 +25,29 @@ import {
 
 export default () => (
   <Container>
-    <Offer>
-      <InviteText>
-        Дешевые авиабилеты от крупнейших авиакомпаний и агентств
-      </InviteText>
-      <Slider>
-        <SliderContent>
-          <CompanyLogo src={aeroflot} alt="Aeroflot" />
-          <CompanyLogo src={s7Logo} alt="s7Logo" />
-          <CompanyLogo src={oneTwoTrip} alt="oneTwoTrip" />
-          <CompanyLogo src={koreanAir} alt="koreanAir" />
-          <CompanyLogo src={eltw} alt="eltw" />
-        </SliderContent>
-        <SliderPrevious src={sliderLeft} />
-        <SliderNext src={sliderRight} />
-        <SliderStateDisplay>
-          <SliderState active />
-          <SliderState />
-          <SliderState />
-        </SliderStateDisplay>
-      </Slider>
-    </Offer>
+    <div className="container">
+      <Offer>
+        <InviteText>
+          Дешевые авиабилеты от крупнейших авиакомпаний и агентств
+        </InviteText>
+        <Slider>
+          <SliderContent>
+            <CompanyLogo src={aeroflot} alt="Aeroflot" />
+            <CompanyLogo src={s7Logo} alt="s7Logo" />
+            <CompanyLogo src={oneTwoTrip} alt="oneTwoTrip" />
+            <CompanyLogo src={koreanAir} alt="koreanAir" />
+            <CompanyLogo src={eltw} alt="eltw" />
+          </SliderContent>
+          <SliderPrevious src={sliderLeft} />
+          <SliderNext src={sliderRight} />
+          <SliderStateDisplay>
+            <SliderState active />
+            <SliderState />
+            <SliderState />
+          </SliderStateDisplay>
+        </Slider>
+      </Offer>
+    </div>
     <Outline src={coloredOutline} />
   </Container>
 );

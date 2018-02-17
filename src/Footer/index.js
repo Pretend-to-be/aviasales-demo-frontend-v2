@@ -12,164 +12,159 @@ import win_logo_icon from "./Win_Link_Logo.svg";
 
 import {
   Container,
-  FooterRubricator,
-  FooterRubricatorUnit,
-  FooterRubricatorUnitHeading,
-  FooterRubricatorUnitContent,
-  FooterRubricatorUnitExtend,
-  FooterUsefulLinks,
-  FooterUsefulLink,
-  FooterSocialMedia,
-  FooterSocialMediaUnit,
-  FooterSocialMediaLogo,
-  FooterSocialMediaName,
-  FooterHotelReserve,
-  FooterHotelReserveLink,
-  FooterInstallAppBlock,
-  FooterInstallAppButton,
-  FooterInstallAppButtonLogo,
-  FooterInstallDownloadAt,
-  FooterInstallPlace,
-  FooterInstallAppButtonText,
-  FooterCopyright
+  Rubricator,
+  RubricatorUnit,
+  RubricatorUnitHeading,
+  RubricatorUnitContent,
+  RubricatorUnitExtend,
+  UsefulLinks,
+  UsefulLink,
+  SocialMedia,
+  SocialMediaUnit,
+  SocialMediaLogo,
+  SocialMediaName,
+  HotelReserve,
+  HotelReserveLink,
+  InstallAppBlock,
+  InstallAppButton,
+  InstallAppButtonLogo,
+  InstallDownloadAt,
+  InstallPlace,
+  InstallAppButtonText,
+  Copyright,
+  ForCustomers,
+  UsefulStuff
 } from "./styled";
 
 export default () => (
   <Container>
-    <FooterRubricator>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>СТРАНЫ</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>Россия</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Таиланд</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Черногория</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Кипр</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Болгария</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Грузия</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitExtend>Все страны →</FooterRubricatorUnitExtend>
-      </FooterRubricatorUnit>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>ГОРОДА</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>Москва</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>
-          Санкт-Петербург
-        </FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Симферополь</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Адлер</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Екатеринбург</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Лондон</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitExtend>Все города →</FooterRubricatorUnitExtend>
-      </FooterRubricatorUnit>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>АВИАКОМПАНИИ</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>Air Berlin</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Air France</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Alitalia</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Air Baltic</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Emirates</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>KLM</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitExtend>
-          Все авиакомпании →
-        </FooterRubricatorUnitExtend>
-      </FooterRubricatorUnit>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>АЭРОПОРТЫ</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>Шереметьево</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Курумоч</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Домодедово</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Толмачево</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Владивосток</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Гамбург</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitExtend>Все аэропорты →</FooterRubricatorUnitExtend>
-      </FooterRubricatorUnit>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>НАПРАВЛЕНИЯ</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>MOW – SIP</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>MOW – AER</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>MOW – TIV</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>MOW – MRV</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>LED – MOW</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>MOW – BKK</FooterRubricatorUnitContent>
-      </FooterRubricatorUnit>
-      <FooterRubricatorUnit>
-        <FooterRubricatorUnitHeading>СЕРВИСЫ</FooterRubricatorUnitHeading>
-        <FooterRubricatorUnitContent>
-          Горящие авиабилеты
-        </FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>
-          Календарь низких цен
-        </FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>
-          Карта низких цен
-        </FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>
-          Спецпредложения
-        </FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Таблица цен</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Блог</FooterRubricatorUnitContent>
-        <FooterRubricatorUnitContent>Помощь</FooterRubricatorUnitContent>
-      </FooterRubricatorUnit>
-    </FooterRubricator>
-    <FooterUsefulLinks>
-      <FooterUsefulLink>О компании</FooterUsefulLink>
-      <FooterUsefulLink>Партнёрская программа</FooterUsefulLink>
-      <FooterUsefulLink>Реклама</FooterUsefulLink>
-      <FooterUsefulLink>Вакансии</FooterUsefulLink>
-      <FooterUsefulLink>Помощь</FooterUsefulLink>
-      <FooterUsefulLink>Правила</FooterUsefulLink>
-      <FooterUsefulLink>White Label авиабилеты</FooterUsefulLink>
-    </FooterUsefulLinks>
-    <FooterSocialMedia>
-      <FooterSocialMediaUnit>
-        <FooterSocialMediaLogo src={vkIcon} alt="VkIcon" />
-        <FooterSocialMediaName>Вконтакте</FooterSocialMediaName>
-      </FooterSocialMediaUnit>
-      <FooterSocialMediaUnit>
-        <FooterSocialMediaLogo src={faceIcon} alt="faceIcon" />
-        <FooterSocialMediaName>Фейсбук</FooterSocialMediaName>
-      </FooterSocialMediaUnit>
-      <FooterSocialMediaUnit>
-        <FooterSocialMediaLogo src={instIcon} alt="instIcon" />
-        <FooterSocialMediaName>Инстаграм</FooterSocialMediaName>
-      </FooterSocialMediaUnit>
-      <FooterSocialMediaUnit>
-        <FooterSocialMediaLogo src={twitterIcon} alt="twitterIcon" />
-        <FooterSocialMediaName>Твиттер</FooterSocialMediaName>
-      </FooterSocialMediaUnit>
-      <FooterSocialMediaUnit>
-        <FooterSocialMediaLogo src={viberIcon} alt="viberIcon" />
-        <FooterSocialMediaName>Вайбер</FooterSocialMediaName>
-      </FooterSocialMediaUnit>
-    </FooterSocialMedia>
-    <FooterHotelReserve>
-      <FooterHotelReserveLink>
-        Поиск и бронирование отелей
-      </FooterHotelReserveLink>
-    </FooterHotelReserve>
-    <FooterInstallAppBlock>
-      <FooterInstallAppButton>
-        <FooterInstallAppButtonLogo src={apple_logo_icon} alt="Apple" />
-        <FooterInstallAppButtonText>
-          <FooterInstallDownloadAt>Скачайте в </FooterInstallDownloadAt>
-          <FooterInstallPlace>App Store</FooterInstallPlace>
-        </FooterInstallAppButtonText>
-      </FooterInstallAppButton>
-      <FooterInstallAppButton>
-        <FooterInstallAppButtonLogo src={google_logo_icon} alt="Google" />
-        <FooterInstallAppButtonText>
-          <FooterInstallDownloadAt>Скачайте в </FooterInstallDownloadAt>
-          <FooterInstallPlace>App Store</FooterInstallPlace>
-        </FooterInstallAppButtonText>
-      </FooterInstallAppButton>
-      <FooterInstallAppButton>
-        <FooterInstallAppButtonLogo src={win_logo_icon} alt="WindowsPhone" />
-        <FooterInstallAppButtonText>
-          <FooterInstallPlace>Windows</FooterInstallPlace>
-          <FooterInstallPlace>Phone</FooterInstallPlace>
-        </FooterInstallAppButtonText>
-      </FooterInstallAppButton>
-    </FooterInstallAppBlock>
-    <FooterCopyright>
-      © 2007–2018, Aviasales — дешевые авиабилеты
-    </FooterCopyright>
+    <div className="container">
+      <Rubricator>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>СТРАНЫ</RubricatorUnitHeading>
+          <RubricatorUnitContent>Россия</RubricatorUnitContent>
+          <RubricatorUnitContent>Таиланд</RubricatorUnitContent>
+          <RubricatorUnitContent>Черногория</RubricatorUnitContent>
+          <RubricatorUnitContent>Кипр</RubricatorUnitContent>
+          <RubricatorUnitContent>Болгария</RubricatorUnitContent>
+          <RubricatorUnitContent>Грузия</RubricatorUnitContent>
+          <RubricatorUnitExtend>Все страны →</RubricatorUnitExtend>
+        </RubricatorUnit>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>ГОРОДА</RubricatorUnitHeading>
+          <RubricatorUnitContent>Москва</RubricatorUnitContent>
+          <RubricatorUnitContent>Санкт-Петербург</RubricatorUnitContent>
+          <RubricatorUnitContent>Симферополь</RubricatorUnitContent>
+          <RubricatorUnitContent>Адлер</RubricatorUnitContent>
+          <RubricatorUnitContent>Екатеринбург</RubricatorUnitContent>
+          <RubricatorUnitContent>Лондон</RubricatorUnitContent>
+          <RubricatorUnitExtend>Все города →</RubricatorUnitExtend>
+        </RubricatorUnit>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>АВИАКОМПАНИИ</RubricatorUnitHeading>
+          <RubricatorUnitContent>Air Berlin</RubricatorUnitContent>
+          <RubricatorUnitContent>Air France</RubricatorUnitContent>
+          <RubricatorUnitContent>Alitalia</RubricatorUnitContent>
+          <RubricatorUnitContent>Air Baltic</RubricatorUnitContent>
+          <RubricatorUnitContent>Emirates</RubricatorUnitContent>
+          <RubricatorUnitContent>KLM</RubricatorUnitContent>
+          <RubricatorUnitExtend>Все авиакомпании →</RubricatorUnitExtend>
+        </RubricatorUnit>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>АЭРОПОРТЫ</RubricatorUnitHeading>
+          <RubricatorUnitContent>Шереметьево</RubricatorUnitContent>
+          <RubricatorUnitContent>Курумоч</RubricatorUnitContent>
+          <RubricatorUnitContent>Домодедово</RubricatorUnitContent>
+          <RubricatorUnitContent>Толмачево</RubricatorUnitContent>
+          <RubricatorUnitContent>Владивосток</RubricatorUnitContent>
+          <RubricatorUnitContent>Гамбург</RubricatorUnitContent>
+          <RubricatorUnitExtend>Все аэропорты →</RubricatorUnitExtend>
+        </RubricatorUnit>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>НАПРАВЛЕНИЯ</RubricatorUnitHeading>
+          <RubricatorUnitContent>MOW – SIP</RubricatorUnitContent>
+          <RubricatorUnitContent>MOW – AER</RubricatorUnitContent>
+          <RubricatorUnitContent>MOW – TIV</RubricatorUnitContent>
+          <RubricatorUnitContent>MOW – MRV</RubricatorUnitContent>
+          <RubricatorUnitContent>LED – MOW</RubricatorUnitContent>
+          <RubricatorUnitContent>MOW – BKK</RubricatorUnitContent>
+        </RubricatorUnit>
+        <RubricatorUnit>
+          <RubricatorUnitHeading>СЕРВИСЫ</RubricatorUnitHeading>
+          <RubricatorUnitContent>Горящие авиабилеты</RubricatorUnitContent>
+          <RubricatorUnitContent>Календарь низких цен</RubricatorUnitContent>
+          <RubricatorUnitContent>Карта низких цен</RubricatorUnitContent>
+          <RubricatorUnitContent>Спецпредложения</RubricatorUnitContent>
+          <RubricatorUnitContent>Таблица цен</RubricatorUnitContent>
+          <RubricatorUnitContent>Блог</RubricatorUnitContent>
+          <RubricatorUnitContent>Помощь</RubricatorUnitContent>
+        </RubricatorUnit>
+      </Rubricator>
+      <UsefulStuff>
+        <ForCustomers>
+          <UsefulLinks>
+            <UsefulLink>О компании</UsefulLink>
+            <UsefulLink>Партнёрская программа</UsefulLink>
+            <UsefulLink>Реклама</UsefulLink>
+            <UsefulLink>Вакансии</UsefulLink>
+            <UsefulLink>Помощь</UsefulLink>
+            <UsefulLink>Правила</UsefulLink>
+            <UsefulLink>White Label авиабилеты</UsefulLink>
+          </UsefulLinks>
+
+          <SocialMedia>
+            <SocialMediaUnit>
+              <SocialMediaLogo src={vkIcon} alt="VkIcon" />
+              <SocialMediaName>Вконтакте</SocialMediaName>
+            </SocialMediaUnit>
+            <SocialMediaUnit>
+              <SocialMediaLogo src={faceIcon} alt="faceIcon" />
+              <SocialMediaName>Фейсбук</SocialMediaName>
+            </SocialMediaUnit>
+            <SocialMediaUnit>
+              <SocialMediaLogo src={instIcon} alt="instIcon" />
+              <SocialMediaName>Инстаграм</SocialMediaName>
+            </SocialMediaUnit>
+            <SocialMediaUnit>
+              <SocialMediaLogo src={twitterIcon} alt="twitterIcon" />
+              <SocialMediaName>Твиттер</SocialMediaName>
+            </SocialMediaUnit>
+            <SocialMediaUnit>
+              <SocialMediaLogo src={viberIcon} alt="viberIcon" />
+              <SocialMediaName>Вайбер</SocialMediaName>
+            </SocialMediaUnit>
+          </SocialMedia>
+          <HotelReserve>
+            <HotelReserveLink>Поиск и бронирование отелей</HotelReserveLink>
+          </HotelReserve>
+        </ForCustomers>
+        <ForCustomers>
+          <InstallAppBlock>
+            <InstallAppButton>
+              <InstallAppButtonLogo src={apple_logo_icon} alt="Apple" />
+              <InstallAppButtonText>
+                <InstallDownloadAt>Скачайте в </InstallDownloadAt>
+                <InstallPlace>App Store</InstallPlace>
+              </InstallAppButtonText>
+            </InstallAppButton>
+            <InstallAppButton>
+              <InstallAppButtonLogo src={google_logo_icon} alt="Google" />
+              <InstallAppButtonText>
+                <InstallDownloadAt>Скачайте в </InstallDownloadAt>
+                <InstallPlace>App Store</InstallPlace>
+              </InstallAppButtonText>
+            </InstallAppButton>
+            <InstallAppButton>
+              <InstallAppButtonLogo src={win_logo_icon} alt="WindowsPhone" />
+              <InstallAppButtonText>
+                <InstallPlace>Windows</InstallPlace>
+                <InstallPlace>Phone</InstallPlace>
+              </InstallAppButtonText>
+            </InstallAppButton>
+          </InstallAppBlock>
+          <Copyright>© 2007–2018, Aviasales — дешевые авиабилеты</Copyright>
+        </ForCustomers>
+      </UsefulStuff>
+    </div>
   </Container>
 );
